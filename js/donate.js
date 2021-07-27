@@ -4,10 +4,6 @@ window.bboxInit = function () {
 };
 
 (function($){
-    // Checks the URL, if there is 'donate' on it, it will execute the entire script, else, stops here.
-    const url = window.location.pathname.split('/').filter(f => f === '');
-    if (url[0] !== 'donate' && url.length > 1) return;
-
     const head = document.head;
     const bbScript = document.createElement('script');
     bbScript.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';

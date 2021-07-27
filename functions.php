@@ -20,9 +20,10 @@ function alpha_child_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'alpha_child_enqueue_styles' );
 
-add_action(
-	'init', function() {
+function load_donation_script() {
+	if (is_page('donate')) {
 		wp_register_script( 'donate', get_stylesheet_directory_uri() . '/js/donate.js', array( 'jquery' ), '', false );
 		wp_enqueue_script( 'donate' );
-	}
-);
+	};
+}
+add_action(	'get_header', 'load_donation_script' );
