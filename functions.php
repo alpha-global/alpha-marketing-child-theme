@@ -20,10 +20,14 @@ function alpha_child_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'alpha_child_enqueue_styles' );
 
-function load_donation_script() {
+function alpha_child_load_js() {
 	if (is_page('donate')) {
 		wp_register_script( 'donate', get_stylesheet_directory_uri() . '/js/donate.js', array( 'jquery' ), '', false );
 		wp_enqueue_script( 'donate' );
 	};
+
+	wp_register_script('osano', 'https://cmp.osano.com/AzZcqLRx57D0c6Gv/dde941b7-a2df-401e-968f-216e585dafcd/osano.js', array('jquery'), '', false);
+	wp_enqueue_script( 'osano' );
 }
-add_action(	'get_header', 'load_donation_script' );
+
+add_action(	'get_header', 'alpha_child_load_js' );
