@@ -24,6 +24,9 @@ function alpha_child_load_js() {
 	if (is_page('donate')) {
 		wp_register_script( 'donate', get_stylesheet_directory_uri() . '/js/donate.js', array( 'jquery' ), '', false );
 		wp_enqueue_script( 'donate' );
+	} else if (is_page('ukraine')) {
+		wp_register_script( 'ukraine_donate', get_stylesheet_directory_uri() . '/js/ukraine-donate.js', array( 'jquery' ), '', false );
+		wp_enqueue_script( 'ukraine_donate' );
 	};
 
 	wp_register_script('osano', 'https://cmp.osano.com/AzZcqLRx57D0c6Gv/dde941b7-a2df-401e-968f-216e585dafcd/osano.js', array('jquery'), '', false);
