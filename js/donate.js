@@ -1,4 +1,3 @@
-var SmartDONATEOLXSettings = { "defaultOptions": "", "product": "SmartDONATEOLX", "client": "greg.freear@htb.org" }
 window.bboxInit = function () {
     bbox.showForm('a671a392-c7f3-4c12-aa50-5017f99c21bd');
 };
