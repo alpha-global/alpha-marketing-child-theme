@@ -3,10 +3,10 @@ window.bboxInit = function () {
 };
 
 (function($){
-    const head = document.head;
     const bbScript = document.createElement('script');
     bbScript.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
     bbScript.async = true;
+    document.getElementsByTagName('head')[0].appendChild(bbScript);
 
     // Listen for click events on the bbox forms for accordion functionality
     function handleBboxForms() {
