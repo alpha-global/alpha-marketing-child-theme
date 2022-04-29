@@ -21,14 +21,14 @@ function alpha_child_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'alpha_child_enqueue_styles' );
 
 function alpha_child_load_js() {
-	if (is_page('donate')) {
+	if (is_page( 4271 )) {
 		wp_register_script( 'donate', get_stylesheet_directory_uri() . '/js/donate.js', array( 'jquery' ), '', false );
 		wp_enqueue_script( 'donate' );
 	} else if (is_page('ukraine')) {
 		wp_register_script( 'ukraine_donate', get_stylesheet_directory_uri() . '/js/ukraine-donate.js', array( 'jquery' ), '', false );
 		wp_enqueue_script( 'ukraine_donate' );
 	}
-	 else if (is_page('giving-at-lc22')) {
+	 else if (is_page( 6818 )) {
 		wp_register_script( 'lc_donate', get_stylesheet_directory_uri() . '/js/lc-donate.js', array( 'jquery' ), '', false );
 		wp_enqueue_script( 'lc_donate' );
 };
