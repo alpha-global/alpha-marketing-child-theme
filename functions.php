@@ -16,7 +16,7 @@ function alpha_child_enqueue_styles() {
 	wp_enqueue_style( $parenthandle, get_template_directory_uri() . '/style.css', array(), $theme->parent()->get( 'Version' ) );
 	wp_enqueue_style( 'alpha-child-style', get_stylesheet_uri(), array( $parenthandle ), $theme->get( 'Version' ) );
 	//load donate-form.css only on donate and leadership conference pages
-	if( is_page([4271, 6818])){
+	if( is_page([4271, 6818, 7983])){
 		wp_enqueue_style( 'donate', get_stylesheet_directory_uri() . '/css/donation-form.css', false, '', 'all');
 	}
 }
