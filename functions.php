@@ -37,7 +37,11 @@ function alpha_child_load_js() {
 	else if (is_page( 7983 )) {
 		wp_register_script( 'ays_donate', get_stylesheet_directory_uri() . '/js/ays-donate.js', array( 'jquery' ), '', false );
 		wp_enqueue_script( 'ays_donate' );
-};
+	}
+	else if (is_page( 8347 )) {
+		wp_register_script( 'lc24_donate', get_stylesheet_directory_uri() . '/js/ays-donate.js', array( 'jquery' ), '', false );
+		wp_enqueue_script( 'lc24_donate' );
+	};	
 
 	wp_register_script('osano', 'https://cmp.osano.com/AzZcqLRx57D0c6Gv/dde941b7-a2df-401e-968f-216e585dafcd/osano.js', array('jquery'), '', false);
 	wp_enqueue_script( 'osano' );
