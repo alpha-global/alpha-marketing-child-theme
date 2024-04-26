@@ -39,7 +39,7 @@ function alpha_child_load_js() {
 		wp_enqueue_script( 'ays_donate' );
 	}
 	else if (is_page( 8347 )) {
-		wp_register_script( 'lc24_donate', get_stylesheet_directory_uri() . '/js/lc-donate.js', array( 'jquery' ), '', false );
+		wp_register_script( 'lc24_donate', get_stylesheet_directory_uri() . '/js/lc24-donate.js', array( 'jquery' ), '', false );
 		wp_enqueue_script( 'lc24_donate' );
 	};	
 
